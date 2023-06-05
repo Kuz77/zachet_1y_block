@@ -42,3 +42,9 @@ for (int i = 0; i < n; i++)
         index++;
     }
 }
+
+Console.WriteLine("массив строк <= 3");
+for (int i = 0; i < count; i++)
+{
+    Console.WriteLine(newArr[i]);
+}
