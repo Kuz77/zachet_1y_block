@@ -15,7 +15,7 @@
 
 
 Console.Write("Введите размер массива: ");
-int n = int.Parse(Console.ReadLine());
+int n = int.Parse(Console.ReadLine()!);
 string[] arr = new string[n];
 
 for (int i = 0; i < n; i++)
@@ -43,7 +43,7 @@ for (int i = 0; i < n; i++)
     }
 }
 
-Console.WriteLine("массив строк <= 3");
+Console.WriteLine("массив строк которые <= 3");
 for (int i = 0; i < count; i++)
 {
     Console.WriteLine(newArr[i]);
