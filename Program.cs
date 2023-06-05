@@ -23,3 +23,22 @@ for (int i = 0; i < n; i++)
     Console.Write($"Введите {i}е значение: ");
     arr[i] = Console.ReadLine()!;
 }
+
+int count = 0;
+for (int i = 0; i < n; i++)
+{
+    if (arr[i].Length <= 3)
+    {
+        count++;
+    }
+}
+string[] newArr = new string[count];
+int index = 0;
+for (int i = 0; i < n; i++)
+{
+    if (arr[i].Length <= 3)
+    {
+        newArr[index] = arr[i];
+        index++;
+    }
+}
